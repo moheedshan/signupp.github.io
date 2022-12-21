@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+     <title>Document</title>
+     <meta charset="utf-8">
+     <meta http-equiv="refresh" content="30">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link rel="stylesheet" href="style/stylel.css">
+     
+     
+</head>
+<body>
+     
+
+          <div id="full_body">
+
+
+               <!-- form body coding start here.....!!! -->
+               
+               <div id="form_con">
+                    <h2 id="heading">Sign up form</h2>
+                   <form>
+                    <!-- firstname coding start here...... -->
+                    <div id="fname">
+                    <label for="firstname" class="input-title">Firstname</label>
+                    <input type="text" name="firstname" class="input" id="firstname" required="required" oninput="signup_btn_open()" onblur="fname_empty_val();signup_btn_open()">
+                    <i class="tick-green" id="fname-tick"></i>
+                    <p id="fname-msg" class="input-msg"></p>
+                    </div>
+                    <!-- firstname coding end here........ -->
+
+<!-- animate__animated animate__headShake animate__infinite -->
+
+
+
+
+
+
+                    <!-- firstname coding start here...... -->
+                    <div id="fname">
+                    <label for="lastname" class="input-title">Lastname</label>
+                    <input type="text" name="firstname" class="input" id="lastname" required="required" onclick="fname_empty_val();lname_stop_val()" onblur="lname_empty_val();username_auto_fill();signup_btn_open()" oninput="lname_ll_cap();signup_btn_open()">
+                    <i class="tick-green" id="lname-tick"></i>
+                    <p id="lname-msg" class="input-msg"></p>
+                    </div>
+                    <!-- firstname coding end here........ -->
+
+
+
+
+
+
+                    <!-- mobile number coding start here...... -->
+                    <div id="fname">
+                    <label for="mobile" class="input-title">Mobile</label>
+                    <input type="text" name="mobile" class="input" maxlength="12" id="mobile" required="required" onclick="fname_empty_val();lname_empty_val();mobile_stop_val();username_auto_fill()" onblur="mobile_empty_val();signup_btn_open()" oninput="mobile_val();signup_btn_open()">
+                    <i class="tick-green" id="mobile-tick"></i>
+                    <p id="mobile-msg" class="input-msg"></p>
+                    </div>
+                    <!-- mobile number coding end here........ -->
+
+
+
+
+
+
+                     <!-- re-mobile number coding start here...... -->
+                     <div id="fname">
+                     <label for="re-mobile" class="input-title">Re-mobile</label>
+                     <input type="text" name="re-mobile" class="input" id="re-mobile" maxlength="12" required="required" onclick="fname_empty_val();lname_empty_val();mobile_empty_val();re_mobile_stop_val();username_auto_fill()" onblur="re_mobile_empty_val();signup_btn_open()" oninput="re_mobile_val();signup_btn_open()">
+                     <i class="tick-green" id="re-mobile-tick"></i>
+                     <p id="re-mobile-msg" class="input-msg"></p>
+                    </div>
+                     <!-- re-mobile number coding end here........ -->
+
+
+
+
+                      <!-- gmail coding start here...... -->
+                      <div id="fname">
+                      <label for="gmail" class="input-title">Gmail</label>
+                      <input type="email" name="gmail" class="input" id="gmail" required="required" onclick="fname_empty_val(); lname_empty_val(); mobile_empty_val(); re_mobile_empty_val();gmail_stop_val();username_auto_fill()" onblur="gmail_empty_val();signup_btn_open()" oninput="gmail_val();signup_btn_open()">
+                      <i class="tick-green" id="gmail-tick"></i>
+                      <p id="gmail-msg" class="input-msg"></p>
+                      <p id="gmail_choose" onclick="autoFill_gmail()"></p><p id="yahoo_choose" onclick="autoFill_yahoo()"></p>
+                      </div>
+                      <!-- gmail coding end here........ -->
+
+
+
+
+
+                       <!-- username coding start here...... -->
+                       <div id="fname">
+                       <label for="username" class="input-title">username</label>
+                       <input type="text" name="username" class="input" id="username" required="required" disabled="disabled" onclick="fname_empty_val();lname_empty_val();mobile_empty_val();re_mobile_empty_val();gmail_empty_val()">
+                       <i class="tick-green" id="username-tick"></i>
+                       <p id="username-msg" class="input-msg"></p>
+                       </div>
+                       <!-- username coding end here........ -->
+
+
+
+                        <!-- password coding start here...... -->
+                        <div id="fname">
+                        <label for="passowrd" class="input-title">Create password</label>
+                        <input type="password" name="password" class="input" id="password" maxlength="10" required="required" onclick="fname_empty_val(); lname_empty_val(); mobile_empty_val(); re_mobile_empty_val(); gmail_empty_val();username_auto_fill();password_stop_val()" onblur="password_empty_val();signup_btn_open()" oninput="eye_btn_val();password_val();signup_btn_open()">
+                        <i class="tick-green" id="password-tick"></i>
+                        <p id="password-msg" class="capital-msg" style="display: none">A - Z |</p>
+                        <p id="password-msg" class="small-msg" style="display: none">a - z |</p>
+                        <p id="password-msg" class="number-msg" style="display:none">0 - 9 |</p>
+                        <p id="password-msg" class="spa-msg" style="display: none">spacial |</p>
+                        <p id="password-msg" class="digit-msg" style="display: none">8 digit</p>
+                        <i id="eye-btn" class="fa fa-eye-slash" style="display: none;" onclick="pass_show_hide()"></i>
+                        </div>
+                        <!-- passowrd coding end here........ -->
+
+
+
+
+                        <!-- submit coding start here -->
+                        <input type="submit" value="Sign up" id="signup-btn" class="submit-btn" disabled="disabled" style="background-color: #ccc;" onclick="signup_btn_open();final_val()">
+                        <!-- submit coding end here -->
+
+
+
+
+
+
+                  
+                   </form>
+               </div>
+
+               <!-- form body coding end here.......!!! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+     <script src="script/script.js"></script>
+</body>
+</html>

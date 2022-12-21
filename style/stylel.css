@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+body{
+     padding: 0;
+     margin: 0;
+
+}
+
+#full_body{
+     width: 100%;
+     height: 750px;
+     background-color: rgb(144, 199, 144);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+
+
+/* form coding start here....... */
+#heading{
+     padding: 0;
+     margin: 0;
+     font-family: sans-serif;
+     color:green;
+     margin-bottom: 25px;
+}
+#form_con{
+     width: 210px;
+     float: left;
+     background-color: white;
+     padding:15px;
+     padding-left: 40px;
+     border-radius: 15px;
+     position: relative;
+     margin-top: 30px;
+}
+
+.tick-green{
+     padding: 0;
+     margin: 0;
+     color: rgb(0, 149, 255);
+     float: left;
+     margin-left: 3px;
+     margin-top: 3px;
+}
+
+
+
+/* firstname coding start here.. */
+#fname{
+     width: 100%;
+     padding-bottom: 12px;
+     float: left;
+     clear: left;
+     margin-bottom:16px;
+     position: relative;
+}
+.input-title{
+     float: left;
+     font-family: sans-serif;
+     font-size: 13px;
+     color: green;
+     font-weight: bold;
+     text-shadow: 0px 0px 1px #ccc;
+}
+
+
+.input{
+     float: left;
+     clear: left;
+     outline-color:green;
+     border: 1px solid #ccc;
+     padding: 3px;
+     font-weight: bold;
+     box-sizing: border-box;
+}
+
+.input-msg{
+     padding: 0;
+     margin: 0;
+     font-size:10px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: red;
+     position: absolute;
+     bottom: 0px;
+     right: 31px;
+}
+
+
+/* create password password msg p element coding for capital, small, number, spacial, msg display start */
+.capital-msg{
+     padding: 0;
+     margin: 0;
+     font-size:10px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: red;
+     position: absolute;
+     bottom: 0px;
+     right: 170px;
+}
+
+.small-msg{
+     padding: 0;
+     margin: 0;
+     font-size:10px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: red;
+     position: absolute;
+     bottom: 0px;
+     right: 140px;
+}
+
+.number-msg{
+     padding: 0;
+     margin: 0;
+     font-size:10px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: red;
+     position: absolute;
+     bottom: 0px;
+     right: 110px;
+}
+
+.digit-msg{
+     padding: 0;
+     margin: 0;
+     font-size:10px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: red;
+     position: absolute;
+     bottom: 0px;
+     right: 31px;
+}
+
+
+.spa-msg{
+     padding: 0;
+     margin: 0;
+     font-size:10px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: red;
+     position: absolute;
+     bottom: 0px;
+     right: 65px;
+}
+/* create password password msg p element coding for capital, small, number, spacial, msg display start */
+
+
+/* firstname coding end here */
+
+
+/* submit coding start here */
+.submit-btn{
+     padding: 5px 61px;
+     border: 1px solid #ccc;
+     background-color:rgb(144, 199, 144);
+     color: white;
+     font-weight: bold;
+     cursor: not-allowed;
+}
+/* submit coding end here */
+/* form coding end here........ */
+
+
+#username{
+     cursor:not-allowed;
+}
+
+
+/* coding for gamil element and yahoo element */
+#gmail_choose,#yahoo_choose{
+     padding: 0;
+     margin: 0;
+     font-family: sans-serif;
+     font-size: 10px;
+     float: left;
+     font-weight: bold;
+     color: rgb(0, 139, 203);
+     margin-top: 4px;
+     cursor: pointer;
+}
+
+#yahoo_choose{
+     margin-left: 5px;
+}
+
+#gmail_choose:hover,#yahoo_choose:hover{
+     color: red;
+}
+
+
+/* coding for gamil element and yahoo element */
+
+
+
+.red{
+     border-color :red;
+}
+
+
+
+/* password show and close button coding start */
+#eye-btn{
+     color:green;
+     position: absolute;
+     top: 19px;
+     right: 30px;
+     cursor: pointer;
+}
+/* password show and close button coding end */
